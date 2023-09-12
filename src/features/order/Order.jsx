@@ -4,7 +4,7 @@ import {
 	calcMinutesLeft,
 	formatCurrency,
 	formatDate,
-} from "../../utils/helpers";
+} from "../../utilities/helpers";
 
 const order = {
 	id: "ABCDEF",
@@ -53,6 +53,7 @@ function Order() {
 		cart,
 	} = order;
 	const deliveryIn = calcMinutesLeft(estimatedDelivery);
+	console.log(cart, id);
 
 	return (
 		<div>
