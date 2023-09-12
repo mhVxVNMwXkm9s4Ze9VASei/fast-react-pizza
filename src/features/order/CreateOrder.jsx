@@ -33,10 +33,12 @@ const fakeCart = [
 function CreateOrder() {
 	// const [withPriority, setWithPriority] = useState(false);
 	const cart = fakeCart;
+	const newState = useState("");
+	console.log(cart, newState, isValidPhone("1234"));
 
 	return (
 		<div>
-			<h2>Ready to order? Let's go!</h2>
+			<h2>Ready to order? Let&apos;s go!</h2>
 
 			<form>
 				<div>
