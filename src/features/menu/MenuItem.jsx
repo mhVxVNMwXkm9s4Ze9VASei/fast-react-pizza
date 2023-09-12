@@ -2,7 +2,7 @@ import { formatCurrency } from "../../utilities/helpers";
 
 function MenuItem({ pizza }) {
 	const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
-	console.log(id, name, unitPrice, ingredients, soldOut, imageUrl);
+	console.log(id);
 
 	return (
 		<li>
