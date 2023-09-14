@@ -1,5 +1,7 @@
 function Username() {
-  return <div className="text-sm font-semibold">React user</div>;
+  return (
+    <div className="hidden text-sm font-semibold md:block">React user</div>
+  );
 }
 
 export default Username;
