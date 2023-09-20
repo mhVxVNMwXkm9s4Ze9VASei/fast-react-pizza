@@ -5,15 +5,22 @@ import { addItem } from "../cart/cartSlice";
 
 function MenuItem({ pizza }) {
   const dispatch = useDispatch();
-  const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
+  const {
+    pizzaId: id,
+    name,
+    unitPrice,
+    ingredients,
+    soldOut,
+    imageUrl,
+  } = pizza;
 
   function handleAddToCart() {
     const newItem = {
-      pizzaId: id,
       name,
+      pizzaId: id,
       quantity: 1,
-      unitPrice,
       totalPrice: unitPrice * 1,
+      unitPrice,
     };
 
     dispatch(addItem(newItem));
